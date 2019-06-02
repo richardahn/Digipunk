@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 596da70e967f84c48ad5fb8c8d81e4ae, type: 3}
+  m_Name: Default Hitbox Layer
+  m_EditorClassIdentifier: 
+  AttachedHitbox:
+    serializedVersion: 2
+    m_Bits: 4096
+  DetachedHitbox:
+    serializedVersion: 2
+    m_Bits: 1024
+  Character:
+    serializedVersion: 2
+    m_Bits: 512
+  Ground:
+    serializedVersion: 2
+    m_Bits: 256
