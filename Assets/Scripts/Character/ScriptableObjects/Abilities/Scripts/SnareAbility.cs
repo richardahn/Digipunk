@@ -20,6 +20,7 @@ public class SnareAbility : CharacterAbility
 
     public SnareAbility(GameObject user, InputKeyStatus key, SnarePreset preset) : base(user, key, preset)
     {
+        // Set preset
         this.preset = preset;
 
         // Setup dependents
@@ -75,4 +76,7 @@ public class SnareAbility : CharacterAbility
     {
         GameObject snareProjectileScene = MonoBehaviour.Instantiate(preset.SnareProjectilePrefab, user.transform.position, Quaternion.identity);
         snareProjectileScene.GetComponent<LobbedProjectile>().SetParameters(launchVelocity);
-        MonoBehaviour.Destroy(snareProjectileScene,
+        MonoBehaviour.Destroy(snareProjectileScene, 4f);
+    }
+    #endregion
+}
